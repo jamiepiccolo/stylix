@@ -20,6 +20,10 @@ let
       path = "floorp";
       name = "Floorp";
     }
+    {
+      path = "zen-browser";
+      name = "zen-browser";
+    }
   ];
   eachConfig = mkCfg: targets: lib.mkMerge (map mkCfg targets);
   eachTarget =
